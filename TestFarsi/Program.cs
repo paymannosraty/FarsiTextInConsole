@@ -1,6 +1,6 @@
 ﻿using TestFarsi.Infrastructure;
 
-Console.WriteLine(Utilities.ChangeTextToUnicode("متن را وارد کنید:"));
+Console.WriteLine(ChangeFarsiToUnicode.ChangeTextToUnicode("متن را وارد کنید:"));
 
-Console.WriteLine(Utilities.ChangeTextToUnicode(input: Console.ReadLine()));
+Console.WriteLine(ChangeFarsiToUnicode.ChangeTextToUnicode(input: Console.ReadLine()));
 

@@ -1,8 +1,8 @@
 ﻿namespace TestFarsi.Infrastructure
 {
-    static internal class Utilities
+    static internal class ChangeFarsiToUnicode
     {
-        static Utilities()
+        static ChangeFarsiToUnicode()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.InputEncoding = System.Text.Encoding.Unicode;
