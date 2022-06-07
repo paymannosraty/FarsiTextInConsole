@@ -1,13 +1,6 @@
 ﻿using TestFarsi.Infrastructure;
 
-Console.OutputEncoding = System.Text.Encoding.UTF8;
-Console.InputEncoding = System.Text.Encoding.Unicode;
+Console.WriteLine(Utilities.ChangeTextToUnicode("متن را وارد کنید:"));
 
-string message = Utilities.ChangeTextToUnicode("متن را وارد کنید:");
-
-Console.WriteLine(message);
-
-string input = Console.ReadLine();
-
-Console.WriteLine(Utilities.ChangeTextToUnicode(input: input));
+Console.WriteLine(Utilities.ChangeTextToUnicode(input: Console.ReadLine()));
 
