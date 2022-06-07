@@ -233,6 +233,7 @@
                 1607 => "\uFEEC",
                 //ی
                 1740 => "\uFEF4",
+
                 _ => ((char)charCode).ToString(),
             };
         }
@@ -305,6 +306,7 @@
                 1607 => "\uFEE9",
                 //ی
                 1740 => "\uFEEF",
+
                 _ => ((char)charCode).ToString(),
             };
         }
