@@ -76,425 +76,231 @@
 
         static string GetUnicodeFirst(int charCode)
         {
-            switch (charCode)
+            return charCode switch
             {
                 //الف
-                case 1575:
-                    return "\uFE8D";
-
+                1575 => "\uFE8D",
                 //ب
-                case 1576:
-                    return "\uFE91";
-
+                1576 => "\uFE91",
                 //پ
-                case 1662:
-                    return "\uFB58";
-
+                1662 => "\uFB58",
                 //ت
-                case 1578:
-                    return "\uFE97";
-
+                1578 => "\uFE97",
                 //ث
-                case 1579:
-                    return "\uFE9B";
-
+                1579 => "\uFE9B",
                 //ج
-                case 1580:
-                    return "\uFE9F";
-
+                1580 => "\uFE9F",
                 //چ
-                case 1670:
-                    return "\uFB7C";
-
+                1670 => "\uFB7C",
                 //ح
-                case 1581:
-                    return "\uFEA3";
-
+                1581 => "\uFEA3",
                 //خ
-                case 1582:
-                    return "\uFEA7";
-
+                1582 => "\uFEA7",
                 //د
-                case 1583:
-                    return "\uFEA9";
-
+                1583 => "\uFEA9",
                 //ذ
-                case 1584:
-                    return "\uFEAB";
-
+                1584 => "\uFEAB",
                 //ر
-                case 1585:
-                    return "\uFEAD";
-
+                1585 => "\uFEAD",
                 //ز
-                case 1586:
-                    return "\uFEAF";
-
+                1586 => "\uFEAF",
                 //ژ
-                case 1688:
-                    return "\uFB8A";
-
+                1688 => "\uFB8A",
                 //س
-                case 1587:
-                    return "\uFEB3";
-
+                1587 => "\uFEB3",
                 //ش
-                case 1588:
-                    return "\uFEB7";
-
+                1588 => "\uFEB7",
                 //ص
-                case 1589:
-                    return "\uFEBB";
-
+                1589 => "\uFEBB",
                 //ض
-                case 1590:
-                    return "\uFEBF";
-
+                1590 => "\uFEBF",
                 //ط
-                case 1591:
-                    return "\uFEC3";
-
+                1591 => "\uFEC3",
                 //ظ
-                case 1592:
-                    return "\uFEC5";
-
+                1592 => "\uFEC5",
                 //ع
-                case 1593:
-                    return "\uFECB";
-
+                1593 => "\uFECB",
                 //غ
-                case 1594:
-                    return "\uFECF";
-
+                1594 => "\uFECF",
                 //ف
-                case 1601:
-                    return "\uFED3";
-
+                1601 => "\uFED3",
                 //ق
-                case 1602:
-                    return "\uFED7";
-
+                1602 => "\uFED7",
                 //ک
-                case 1705:
-                    return "\uFEDB";
-
+                1705 => "\uFEDB",
                 //گ
-                case 1711:
-                    return "\uFB94";
-
+                1711 => "\uFB94",
                 //ل
-                case 1604:
-                    return "\uFEDF";
-
+                1604 => "\uFEDF",
                 //م
-                case 1605:
-                    return "\uFEE3";
-
+                1605 => "\uFEE3",
                 //ن
-                case 1606:
-                    return "\uFEE7";
-
+                1606 => "\uFEE7",
                 //و
-                case 1608:
-                    return "\uFEED";
-
+                1608 => "\uFEED",
                 //ه
-                case 1607:
-                    return "\uFEEB";
-
+                1607 => "\uFEEB",
                 //ی
-                case 1740:
-                    return "\uFEF3";
-
-                default:
-                    return ((char)charCode).ToString();
-            }
+                1740 => "\uFEF3",
+                _ => ((char)charCode).ToString(),
+            };
         }
 
         static string GetUnicodeMiddle(int charCode)
         {
-            switch (charCode)
+            return charCode switch
             {
                 //الف
-                case 1575:
-                    return "\uFE8E";
-
+                1575 => "\uFE8E",
                 //ب
-                case 1576:
-                    return "\uFE92";
-
+                1576 => "\uFE92",
                 //پ
-                case 1662:
-                    return "\uFB59";
-
+                1662 => "\uFB59",
                 //ت
-                case 1578:
-                    return "\uFE98";
-
+                1578 => "\uFE98",
                 //ث
-                case 1579:
-                    return "\uFE9C";
-
+                1579 => "\uFE9C",
                 //ج
-                case 1580:
-                    return "\uFEA0";
-
+                1580 => "\uFEA0",
                 //چ
-                case 1670:
-                    return "\uFB7D";
-
+                1670 => "\uFB7D",
                 //ح
-                case 1581:
-                    return "\uFEA4";
-
+                1581 => "\uFEA4",
                 //خ
-                case 1582:
-                    return "\uFEA8";
-
+                1582 => "\uFEA8",
                 //د
-                case 1583:
-                    return "\uFEA9";
-
+                1583 => "\uFEA9",
                 //ذ
-                case 1584:
-                    return "\uFEAB";
-
+                1584 => "\uFEAB",
                 //ر
-                case 1585:
-                    return "\uFEAD";
-
+                1585 => "\uFEAD",
                 //ز
-                case 1586:
-                    return "\uFEAF";
-
+                1586 => "\uFEAF",
                 //ژ
-                case 1688:
-                    return "\uFB8A";
-
+                1688 => "\uFB8A",
                 //س
-                case 1587:
-                    return "\uFEB4";
-
+                1587 => "\uFEB4",
                 //ش
-                case 1588:
-                    return "\uFEB8";
-
+                1588 => "\uFEB8",
                 //ص
-                case 1589:
-                    return "\uFEBC";
-
+                1589 => "\uFEBC",
                 //ض
-                case 1590:
-                    return "\uFEC0";
-
+                1590 => "\uFEC0",
                 //ط
-                case 1591:
-                    return "\uFEC2";
-
+                1591 => "\uFEC2",
                 //ظ
-                case 1592:
-                    return "\uFEC8";
-
+                1592 => "\uFEC8",
                 //ع
-                case 1593:
-                    return "\uFECC";
-
+                1593 => "\uFECC",
                 //غ
-                case 1594:
-                    return "\uFED0";
-
+                1594 => "\uFED0",
                 //ف
-                case 1601:
-                    return "\uFED4";
-
+                1601 => "\uFED4",
                 //ق
-                case 1602:
-                    return "\uFED8";
-
+                1602 => "\uFED8",
                 //ک
-                case 1705:
-                    return "\uFEDC";
-
+                1705 => "\uFEDC",
                 //گ
-                case 1711:
-                    return "\uFB95";
-
+                1711 => "\uFB95",
                 //ل
-                case 1604:
-                    return "\uFEE0";
-
+                1604 => "\uFEE0",
                 //م
-                case 1605:
-                    return "\uFEE4";
-
+                1605 => "\uFEE4",
                 //ن
-                case 1606:
-                    return "\uFEE8";
-
+                1606 => "\uFEE8",
                 //و
-                case 1608:
-                    return "\uFEEE";
-
+                1608 => "\uFEEE",
                 //ه
-                case 1607:
-                    return "\uFEEC";
-
+                1607 => "\uFEEC",
                 //ی
-                case 1740:
-                    return "\uFEF4";
-
-                default:
-                    return ((char)charCode).ToString();
-            }
+                1740 => "\uFEF4",
+                _ => ((char)charCode).ToString(),
+            };
         }
 
         static string GetUnicodeLast(int charCode)
         {
-            switch (charCode)
+            return charCode switch
             {
                 //الف
-                case 1575:
-                    return "\uFE8E";
-
+                1575 => "\uFE8E",
                 //ب
-                case 1576:
-                    return "\uFE8F";
-
+                1576 => "\uFE8F",
                 //پ
-                case 1662:
-                    return "\uFB56";
-
+                1662 => "\uFB56",
                 //ت
-                case 1578:
-                    return "\uFE95";
-
+                1578 => "\uFE95",
                 //ث
-                case 1579:
-                    return "\uFE99";
-
+                1579 => "\uFE99",
                 //ج
-                case 1580:
-                    return "\uFE9D";
-
+                1580 => "\uFE9D",
                 //چ
-                case 1670:
-                    return "\uFB7A";
-
+                1670 => "\uFB7A",
                 //ح
-                case 1581:
-                    return "\uFEA1";
-
+                1581 => "\uFEA1",
                 //خ
-                case 1582:
-                    return "\uFEA5";
-
+                1582 => "\uFEA5",
                 //د
-                case 1583:
-                    return "\uFEA9";
-
+                1583 => "\uFEA9",
                 //ذ
-                case 1584:
-                    return "\uFEAB";
-
+                1584 => "\uFEAB",
                 //ر
-                case 1585:
-                    return "\uFEAD";
-
+                1585 => "\uFEAD",
                 //ز
-                case 1586:
-                    return "\uFEAF";
-
+                1586 => "\uFEAF",
                 //ژ
-                case 1688:
-                    return "\uFB8A";
-
+                1688 => "\uFB8A",
                 //س
-                case 1587:
-                    return "\uFEB1";
-
+                1587 => "\uFEB1",
                 //ش
-                case 1588:
-                    return "\uFEB5";
-
+                1588 => "\uFEB5",
                 //ص
-                case 1589:
-                    return "\uFEB9";
-
+                1589 => "\uFEB9",
                 //ض
-                case 1590:
-                    return "\uFEBD";
-
+                1590 => "\uFEBD",
                 //ط
-                case 1591:
-                    return "\uFEC3";
-
+                1591 => "\uFEC3",
                 //ظ
-                case 1592:
-                    return "\uFEC5";
-
+                1592 => "\uFEC5",
                 //ع
-                case 1593:
-                    return "\uFEC9";
-
+                1593 => "\uFEC9",
                 //غ
-                case 1594:
-                    return "\uFECD";
-
+                1594 => "\uFECD",
                 //ف
-                case 1601:
-                    return "\uFED1";
-
+                1601 => "\uFED1",
                 //ق
-                case 1602:
-                    return "\uFED5";
-
+                1602 => "\uFED5",
                 //ک
-                case 1705:
-                    return "\uFED9";
-
+                1705 => "\uFED9",
                 //گ
-                case 1711:
-                    return "\uFB92";
-
+                1711 => "\uFB92",
                 //ل
-                case 1604:
-                    return "\uFEDD";
-
+                1604 => "\uFEDD",
                 //م
-                case 1605:
-                    return "\uFEE1";
-
+                1605 => "\uFEE1",
                 //ن
-                case 1606:
-                    return "\uFEE5";
-
+                1606 => "\uFEE5",
                 //و
-                case 1608:
-                    return "\uFEED";
-
+                1608 => "\uFEED",
                 //ه
-                case 1607:
-                    return "\uFEE9";
-
+                1607 => "\uFEE9",
                 //ی
-                case 1740:
-                    return "\uFEEF";
-
-                default:
-                    return ((char)charCode).ToString();
-            }
+                1740 => "\uFEEF",
+                _ => ((char)charCode).ToString(),
+            };
         }
 
         static string Reverse(string text)
         {
-            if (text == null)
-            {
-                return null;
-            }
-            char[] array = text.ToCharArray();
-            Array.Reverse(array);
-            return new String(array);
-        }
+            string result = string.Empty;
 
+            if (string.IsNullOrEmpty(text) == false)
+            {
+                char[] array = text.ToCharArray();
+                Array.Reverse(array);
+                result = new String(array);
+            }
+            return result;
+        }
     }
 }
