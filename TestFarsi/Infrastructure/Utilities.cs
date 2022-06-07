@@ -41,7 +41,9 @@
                     {
                         int characterLocation = 0;
 
-                        if (index == 0 || (index != input.Length - 1 && SeparateCharacterList.Any(current => current == input[index - 1])))
+                        if (index == 0 || (index != input.Length - 1 &&
+                            SeparateCharacterList.Any(current => current == input[index - 1]) &&
+                            input[index + 1] != 32))
                         {
                             characterLocation = 0;
                         }
