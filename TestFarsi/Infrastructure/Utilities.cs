@@ -6,7 +6,22 @@
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.InputEncoding = System.Text.Encoding.Unicode;
+
+            //د
+            SeparateCharacterList.Add(1583);
+            //ذ
+            SeparateCharacterList.Add(1584);
+            //ر
+            SeparateCharacterList.Add(1585);
+            //ز
+            SeparateCharacterList.Add(1586);
+            //ژ
+            SeparateCharacterList.Add(1668);
+            //و
+            SeparateCharacterList.Add(1608);
         }
+
+        readonly static List<int> SeparateCharacterList = new List<int>();
 
         public static string ChangeTextToUnicode(string input)
         {
@@ -25,7 +40,8 @@
                     else
                     {
                         int characterLocation = 0;
-                        if (index == 0)
+
+                        if (index == 0 || (index != input.Length - 1 && SeparateCharacterList.Any(current => current == input[index - 1])))
                         {
                             characterLocation = 0;
                         }
