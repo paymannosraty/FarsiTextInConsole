@@ -243,7 +243,7 @@
             return charCode switch
             {
                 //الف
-                1575 => "\uFE8E",
+                1575 => "\uFE8D",
                 //ب
                 1576 => "\uFE8F",
                 //پ
