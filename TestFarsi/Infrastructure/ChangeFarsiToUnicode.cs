@@ -29,6 +29,8 @@
 
             if (string.IsNullOrEmpty(input) == false)
             {
+                int lastIndex = input.Length - 1;
+
                 for (int index = 0; index < input.Length; index++)
                 {
                     var charCode = (int)input[index];
@@ -39,24 +41,24 @@
                     }
                     else
                     {
-                        int characterLocation = 0;
+                        Infrastructure.Enums characterLocation = Enums.FirstPosition;
 
-                        if (index == 0 || (index != input.Length - 1 &&
+                        if (index == 0 || (index != lastIndex &&
                             SeparateCharacterList.Any(current => current == input[index - 1]) &&
                             input[index + 1] != 32))
                         {
-                            characterLocation = 0;
+                            characterLocation = Enums.FirstPosition;
                         }
-                        else if ((index == (input.Length - 1)) ||
+                        else if ((index == lastIndex) ||
                             (input[index + 1] == 32) ||
                             (input[index + 1] == 32 && input[index - 1] == 32))
                         {
-                            characterLocation = 2;
+                            characterLocation = Enums.LastPosition;
                         }
                         else if ((input[index + 1] != 32 && input[index - 1] != 32 && input[index - 1] != 1575) ||
                             (input[index + 1] == 32 && input[index - 1] != 32 && input[index - 1] != 1575))
                         {
-                            characterLocation = 1;
+                            characterLocation = Enums.MiddlePosition;
                         }
 
                         var unicodeChar = GetUnicode(charCode, characterLocation);
@@ -68,21 +70,21 @@
             return Reverse(result);
         }
 
-        static string GetUnicode(int charCode, int characterLocation)
+        static string GetUnicode(int charCode, Enums characterLocation)
         {
             var result = string.Empty;
 
             switch (characterLocation)
             {
-                case 0:
+                case Enums.FirstPosition:
                     result = GetUnicodeFirst(charCode);
                     break;
 
-                case 1:
+                case Enums.MiddlePosition:
                     result = GetUnicodeMiddle(charCode);
                     break;
 
-                case 2:
+                case Enums.LastPosition:
                     result = GetUnicodeLast(charCode);
                     break;
 
