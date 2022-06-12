@@ -41,7 +41,7 @@
                     }
                     else
                     {
-                        Infrastructure.Enums characterLocation = Enums.FirstPosition;
+                        var characterLocation = Enums.FirstPosition;
 
                         if (index == 0 || (index != lastIndex &&
                             SeparateCharacterList.Any(current => current == input[index - 1]) &&
